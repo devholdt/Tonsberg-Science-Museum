@@ -8,22 +8,46 @@
       src="https://kit.fontawesome.com/c609dd8d17.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="https://use.typekit.net/vqv1ksa.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ojg4fkq.css" />
     <link href="css/styles.css" rel="stylesheet" />
     <title>Tønsberg Science Museum TITLE</title>
   </head>
 
   <body>
     <header>
-      <a href="index.html"
-        ><img src="images/Logo.png" alt="Tønsberg Science Museum Logo"
-      /></a>
-      <input type="text" id="searchbar" placeholder="Search the site" />
-      <div>
-        <a href="exhibitions.html">Exhibitions</a>
-        <a href="events.html">Events and activities</a>
-        <a href="about.html">About us</a>
-        <a href="support.html">Support</a>
+      <section class="header-top">
+        <div>
+          <a href="index.html"
+            ><img
+              src="images/TSM-Logo.jpg"
+              alt="Tønsberg Science Museum Logo"
+              class="logo-img"
+          /></a>
+          <p>
+            Tønsberg<br />
+            Science Museum
+          </p>
+          <p>explore together</p>
+        </div>
+        <div class="search-container">
+          <i class="fas fa-search search-icon"></i>
+          <input
+            type="text"
+            id="searchbar"
+            placeholder="Search the site..."
+            class="search-bar"
+          />
+          <input type="submit" value="Explore" class="search-button" />
+        </div>
+      </section>
+      <div class="nav">
+        <a href="exhibitions.html" class="nav-exhibitions">Exhibitions</a>
+
+        <a href="events.html" class="nav-events">Events and activities</a>
+
+        <a href="about.html" class="nav-about">About us</a>
+
+        <a href="support.html" class="nav-support">Support</a>
       </div>
       <div>
         <a href="index.html"><i class="fas fa-home"></i></a>
@@ -107,7 +131,7 @@
         <div>
           <h5>Contact</h5>
           <h6>Location</h6>
-          <p>Address Road 25</p>
+          <p>Graabrødregaten 17</p>
           <h6>Phone</h6>
           <p>+47 12345678</p>
           <h6>Email</h6>
@@ -144,7 +168,10 @@
     <footer>
       <div>
         <h3>Information</h3>
-        <p><i class="fas fa-map-marker-alt"></i> Address Road 25</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Graabrødregaten 17, 3110
+          Tønsberg
+        </p>
         <ul>
           <li>Monday: Closed</li>
           <li>Tue - Thu: 10:00 - 16:00</li>

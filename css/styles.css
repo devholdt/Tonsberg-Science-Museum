@@ -1,3 +1,121 @@
-img {
-    width: 350px;
+/* Global */
+:root {
+    --white: #fff;
+    --light-grey: #ccc;
+    --grey: #343434;
+    --grey-transparent: #343434b9;
+    --blue: #1478C8;
+    --blue-transparent: #288bdcb9;
+    --light-blue: #288CDC;
+    --dark-blue: #06467A;
+    --green: #3FA652;
+    --green-transparent: #3FA652b9;
+    --dark-green: #21552A;
+    --gold: #C78114;
+    --brown: #7A4A00;
+    --brown-transparent: #7A4A00b9;
+    --salmon: #FC7F69;
+    --salmon-transparent: #FC7F69b9;
+}
+
+body {
+    font-family: "Circe Rounded", Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Filson Soft", Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Header */
+
+.header-top {
+    max-width: 1640px;
+    margin: auto;
+}
+
+.logo-img {
+    width: 150px;
+}
+.search-container {
+    display: inline-flex;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+    margin: 16px 0 16px 1300px;
+}
+
+.search-icon {
+    margin: auto;
+    padding: 8px 0 8px 16px;
+}
+
+
+.search-bar {
+    border: none;
+    font-size: 14px;
+    padding: 8px 16px 8px 8px;
+}
+
+.search-button {
+    background: var(--light-blue);
+    font-family: "Circe Rounded", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border: none;
+    color: var(--white);
+    padding: 8px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background: var(--blue);
+    margin: 16px auto;
+    text-align: center;
+    height: 63px;
+}
+
+.nav a {
+    margin: auto 0;
+    padding: 18px 0;
+    width: 260px;
+    font-size: 21px;
+}
+
+.nav-exhibitions {
+    background-image: url(../images/Mammoth.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+    border-left: 3px solid var(--dark-blue);
+}
+
+.nav-events {
+    background-image: url(../images/Family.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+    border-left: 3px solid var(--dark-blue);
+}
+
+.nav-about {
+    background-image: url(../images/Exterior.jpg);
+    background-size: cover;
+    background-position-y: 55%;
+    border-left: 3px solid var(--dark-blue);
+}
+
+.nav-support {
+    background-image: url(../images/Astronaut.jpg);
+    background-size: cover;
+    background-position-y: 15%;
+    border-left: 3px solid var(--dark-blue);
+    border-right: 3px solid var(--dark-blue);
+}
+
+/* temporary */
+main img {
+    width: 150px;
 }
