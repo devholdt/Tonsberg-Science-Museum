@@ -9,7 +9,7 @@
     --light-blue: #288CDC;
     --dark-blue: #06467A;
     --green: #3FA652;
-    --green-transparent: #3FA652b9;
+    --green-transparent: #3FA65215;
     --dark-green: #21552A;
     --gold: #C78114;
     --brown: #7A4A00;
@@ -21,10 +21,51 @@
 body {
     font-family: "Circe Rounded", Arial, Helvetica, sans-serif;
     margin: auto;
+    color: var(--grey);
 }
 
-h1, h2, h3, h4, h5, h6 {
+main {
+    width: 1214px;
+    margin: auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
     font-family: "Filson Soft", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--blue);
+    margin: auto;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: auto;
+}
+
+h4 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 22px;
+    font-weight: 600;
 }
 
 a {
@@ -39,14 +80,42 @@ a {
     margin: auto;
 }
 
+.logo {
+    display: flex;
+    width: 450px;
+    height: 180px;
+    margin: 0 0 10px 0;
+}
+
 .logo-img {
     width: 150px;
+    height: 150px;
+    margin-top: 30px;
 }
+
+.logo-text {
+    font-size: 2.5em;
+    color: var(--blue);
+    font-weight: 350;
+    line-height: 1;
+}
+
+.logo-name {
+    border-bottom: 0.5px solid var(--grey);
+}
+
+.logo-sub {
+    font-size: 21px;
+    font-weight: 350;
+}
+
 .search-container {
     display: inline-flex;
     border: 1px solid var(--light-grey);
     border-radius: 5px;
-    margin: 16px 0 16px 1300px;
+    position: relative;
+    left: 1300px;
+    bottom: 48px;
 }
 
 .search-icon {
@@ -70,20 +139,23 @@ a {
     padding: 8px;
 }
 
-.nav {
+nav {
     display: flex;
     justify-content: center;
     background: var(--blue);
-    margin: 16px auto;
+    margin: auto;
     text-align: center;
     height: 63px;
+    position: relative;
+    bottom: 32px;
 }
 
-.nav a {
+nav a {
     margin: auto 0;
     padding: 18px 0;
     width: 260px;
     font-size: 21px;
+    box-shadow: inset 0 0 0 32px var(--blue-transparent);
 }
 
 .nav-exhibitions {
@@ -115,7 +187,135 @@ a {
     border-right: 3px solid var(--dark-blue);
 }
 
-/* temporary */
-main img {
-    width: 150px;
+.breadcrumb a {
+    background-color: var(--blue);
+    padding: 11px 13px;
+    font-size: 1.5em;
+    margin-left: 140px;
+}
+
+/* Side menu */
+.sidenav-container {
+    width: 276px;
+    float: right;
+    margin-top: 50px;
+    padding: 32px 0 32px 61px;
+    border-left: 1px solid var(--grey-transparent);
+}
+
+.sidenav-container img {
+    width: 244px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.sidenav__contact {
+    border: 1px solid var(--grey-transparent);
+    margin-bottom: 64px;
+}
+
+.sidenav__news {
+    border: 1px solid var(--grey-transparent);
+}
+
+.sidenav__contact h4, .sidenav__news h4 {
+    background: var(--grey);
+    color: var(--white);
+}
+
+/* Home page */
+.explore-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 812px;
+    margin: 150px auto 0 auto;
+}
+
+.explore-container img {
+    max-width: 400px;
+    padding-left: 16px;
+}
+
+.teachers__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 812px;
+    margin: 0 auto 150px auto;
+}
+
+.teachers__grid img {
+    max-width: 400px;
+    padding-right: 16px;
+}
+
+.club {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    max-width: 61%;
+    align-items: center;
+    border: 3px solid var(--green);
+    border-radius: 5px;
+    background-color: var(--green-transparent);
+    margin: 64px auto;
+    padding: 32px;
+}
+
+.club img {
+    width: 100px;
+}
+
+.club-join {
+    font-family: "filson soft", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    width: 180px;
+    margin-left: 16px;
+    line-height: 1;
+    color: var(--green);
+}
+
+.club-time {
+    font-style: italic;
+    font-weight: 350;
+    font-size: 24px;
+    width: 250px;
+    text-align: center;
+    line-height: 1;
+}
+
+.vrkid {
+    max-width: 812px;
+    margin: auto;
+}
+
+.vrkid img {
+    max-width: 812px;
+}
+
+.p-blue {
+    color: var(--blue);
+}
+
+.p-darkblue {
+    color: var(--dark-blue);
+}
+
+.p-green {
+    color: var(--green);
+}
+
+.p-darkgreen {
+    color: var(--dark-green);
+}
+
+.p-gold {
+    color: var(--gold);
+}
+
+.p-salmon {
+    color: var(--salmon);
+}
+
+.p-brown {
+    color: var(--brown);
 }

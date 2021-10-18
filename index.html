@@ -17,17 +17,18 @@
     <header>
       <section class="header-top">
         <div>
-          <a href="index.html"
+          <a class="logo" href="index.html"
             ><img
+              class="logo-img"
               src="images/TSM-Logo.jpg"
               alt="Tønsberg Science Museum Logo"
-              class="logo-img"
-          /></a>
-          <p>
-            Tønsberg<br />
-            Science Museum
-          </p>
-          <p>explore together</p>
+            />
+            <p class="logo-text">
+              Tønsberg<br />
+              <span class="logo-name">Science Museum</span><br />
+              <span class="logo-sub">explore together</span>
+            </p>
+          </a>
         </div>
         <div class="search-container">
           <i class="fas fa-search search-icon"></i>
@@ -40,7 +41,7 @@
           <input type="submit" value="Explore" class="search-button" />
         </div>
       </section>
-      <div class="nav">
+      <nav>
         <a href="exhibitions.html" class="nav-exhibitions">Exhibitions</a>
 
         <a href="events.html" class="nav-events">Events and activities</a>
@@ -48,126 +49,136 @@
         <a href="about.html" class="nav-about">About us</a>
 
         <a href="support.html" class="nav-support">Support</a>
-      </div>
-      <div>
+      </nav>
+      <div class="breadcrumb">
         <a href="index.html"><i class="fas fa-home"></i></a>
       </div>
     </header>
 
     <main>
-      <h1>Welcome to Tønsberg Science Museum</h1>
-      <section>
-        <div>
-          <h3>Explore together</h3>
-          <h4>For kids</h4>
-          <p>
-            Are you a young person looking to learn more about science? Come on
-            down to our museum, there's plenty to see and do.
-          </p>
-          <p>
-            You can learn about Newtonian physics from our bumper swing, or why
-            not travel back in time and meet our resident Woolly Mammoth? Our
-            exhibits are designed to be accessible for interested minds, so make
-            sure you come ready to learn and explore.
-          </p>
-          <p>
-            We also have the Young Stars Club which meets once a week on a
-            Saturday between 10:00 and 13:00 where you’ll get to explore and
-            experiment with our team of experts.
-          </p>
-          <p>
-            During the school holidays we run special holiday clubs where you
-            can join other children your age to go on a journey of discovery.
-            Each holiday we pick a new theme to explore. To find out more about
-            the holiday club and how you can join, send us a message.
-          </p>
-        </div>
-        <div>
-          <img src="images/Exhibition.jpg" alt="Image of an exhibition" />
-        </div>
-      </section>
-      <section>
-        <div>
-          <img src="images/Club.png" alt="Young Stars Club Logo" />
-          <span>Join the Young Stars Club!</span>
-        </div>
-        <div>
-          <p>Saturdays between 10:00 and 13:00</p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <img src="images/Hall.jpg" alt="Image of a museum hall" />
-        </div>
-        <div>
-          <h4>For teachers</h4>
-          <p>
-            As a community-driven museum, we want to work with schools to create
-            places of learning and exploring. Our team are on hand to give your
-            students guided tours of the museum, teach them in our learning
-            laboratory, and provide great video presentations that will excite
-            and inspire them.
-          </p>
-          <p>
-            Please get in touch with us here to find out more about our
-            facilities and to arrange a time to bring your students through for
-            a visit.
-          </p>
-          <h4>Researchers</h4>
-          <p>
-            Are you looking to get involved with our team of researchers and
-            academics? Our museum offers various ways for you to use our
-            resources and contribute towards them. We have online records,
-            laboratory space, and a working relationship with a number of
-            universities around the country.
-          </p>
-        </div>
-      </section>
-      <img
-        src="images/Virtualone.jpg"
-        alt="Image of a kid wearing a VR headset while painting"
-      />
-      <section>
-        <div>
-          <h5>Contact</h5>
-          <h6>Location</h6>
+      <h1>
+        Welcome to<br />
+        Tønsberg Science Museum
+      </h1>
+      <section class="sidenav-container">
+        <div class="sidenav__contact">
+          <h4>Contact</h4>
+          <h5>Location</h5>
           <p>Graabrødregaten 17</p>
-          <h6>Phone</h6>
+          <h5>Phone</h5>
           <p>+47 12345678</p>
-          <h6>Email</h6>
+          <h5>Email</h5>
           <p>tbgscience@museum.no</p>
         </div>
-        <div>
-          <h5>News</h5>
+        <div class="sidenav__news">
+          <h4>News</h4>
           <div>
-            <h6>Visiting Professor of Aeronautics</h6>
+            <p>Visiting Professor of Aeronautics</p>
             <p>01.11.21 - 06.11.21</p>
-            <img src="images/Science.jpg" alt="Image of Prof Sheila Widnall" />
+            <img src="images/Science.jpg" alt="Prof Sheila Widnall" />
           </div>
           <div>
-            <h6>Night in the Museum</h6>
+            <p>Night in the Museum</p>
             <p>Fridays from 18:00</p>
-            <img
-              src="images/Nightsmall.jpg"
-              alt="Image of the museum at night"
-            />
+            <img src="images/Nightsmall.jpg" alt="Museum at night" />
           </div>
           <div>
-            <h6>Energetica Exhibition on loan</h6>
+            <p>Energetica Exhibition on loan</p>
             <p>06.12.21 - 09.01.22</p>
             <img
               src="images/Energeticaone.jpg"
-              alt="Image of the Energetica
+              alt="Energetica
             exhibition"
             />
           </div>
+        </div>
+      </section>
+      <section class="explore-container">
+        <div>
+          <h2>Explore together</h2>
+          <h3>For kids</h3>
+          <p>
+            Are you a young person looking to learn more about science?
+            <span class="p-blue">Come on down to our museum</span>, there's
+            plenty to see and do.
+          </p>
+          <p>
+            You can learn about Newtonian physics from our bumper swing, or why
+            not travel back in time and meet our resident Woolly Mammoth?
+            <span class="p-blue"
+              >Our exhibits are designed to be accessible for interested
+              minds</span
+            >, so make sure you come ready to learn and explore.
+          </p>
+          <p>
+            We also have the <span class="p-green">Young Stars Club</span> which
+            meets once a week on a
+            <span class="p-green">Saturday between 10:00 and 13:00</span> where
+            you’ll get to explore and experiment with our team of experts.
+          </p>
+          <p>
+            During the school holidays we run
+            <span class="p-green">special holiday clubs</span> where you can
+            join other children your age to go on a journey of discovery. Each
+            holiday we pick a <span class="p-green">new theme to explore</span>.
+            To find out more about the holiday club and how you can join, send
+            us a message.
+          </p>
+        </div>
+        <div>
+          <img src="images/Exhibition.jpg" alt="Museum exhibition" />
+        </div>
+      </section>
+      <div class="club">
+        <img src="images/Club.png" alt="Young Stars Club Logo" />
+        <p class="club-join">Join the Young Stars Club!</p>
+        <p class="club-time">Saturdays between 10:00 and 13:00</p>
+      </div>
+      <section>
+        <div class="teachers__grid">
+          <div>
+            <img src="images/Hall.jpg" alt="Museum hall" />
+          </div>
+          <div>
+            <h3>For teachers</h3>
+            <p>
+              As a community-driven museum, we want to work with schools to
+              <span class="p-gold">create places of learning and exploring</span
+              >. Our team are on hand to give your students
+              <span class="p-gold">guided tours of the museum</span>, teach them
+              in our learning laboratory, and provide
+              <span class="p-gold">great video presentations</span> that will
+              <span class="p-gold">excite and inspire</span> them.
+            </p>
+            <p>
+              Please get in touch with us here to
+              <span class="p-gold"></span>find out more about our facilities and
+              to arrange a time to bring your students through for a visit.
+            </p>
+            <h3>Researchers</h3>
+            <p>
+              Are you looking to
+              <span class="p-salmon"
+                >get involved with our team of researchers and academics</span
+              >? Our museum offers various ways for you to use our resources and
+              contribute towards them. We have online records, laboratory space,
+              and a
+              <span class="p-salmon"
+                >working relationship with a number of universities</span
+              >
+              around the country.
+            </p>
+          </div>
+        </div>
+        <div class="vrkid">
+          <img src="images/Virtualone.jpg" alt="Kid with a VR headset" />
         </div>
       </section>
     </main>
 
     <footer>
       <div>
-        <h3>Information</h3>
+        <h2>Information</h2>
         <p>
           <i class="fas fa-map-marker-alt"></i> Graabrødregaten 17, 3110
           Tønsberg
@@ -182,7 +193,7 @@
         <a href="about.html"><i class="fas fa-info-circle"></i> About us</a>
       </div>
       <div>
-        <h3>Contact us</h3>
+        <h2>Contact us</h2>
         <p><i class="fas fa-phone-alt"></i> +47 12345678</p>
         <p><i class="fas fa-envelope"></i> tbgscience@museum.no</p>
         <a href="support.html"
@@ -190,7 +201,7 @@
         >
       </div>
       <div>
-        <h3>Social</h3>
+        <h2>Social</h2>
         <p><i class="fab fa-facebook-square"></i></p>
         <p><i class="fab fa-instagram-square"></i></p>
         <p><i class="fab fa-youtube"></i></p>
