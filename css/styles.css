@@ -68,13 +68,18 @@ h5 {
     font-weight: 600;
 }
 
+h6 {
+    font-size: 16px;
+    text-decoration: underline;
+    margin: 16px auto 0 auto;
+}
+
 a {
     text-decoration: none;
     color: var(--white);
 }
 
 /* Header */
-
 .header-top {
     max-width: 1640px;
     margin: auto;
@@ -198,8 +203,8 @@ nav a {
 .sidenav-container {
     width: 276px;
     float: right;
-    margin-top: 50px;
-    padding: 32px 0 32px 61px;
+    margin-top: 52px;
+    padding: 32px 0 32px 43px;
     border-left: 1px solid var(--grey-transparent);
 }
 
@@ -207,20 +212,46 @@ nav a {
     width: 244px;
     height: 190px;
     object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.sidenav-container h4 {
+    margin: auto;
+    padding: 4px 0 4px 16px;
+    text-align: left;
+    background: var(--grey);
+    color: var(--white);
 }
 
 .sidenav__contact {
     border: 1px solid var(--grey-transparent);
     margin-bottom: 64px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sidenav__contact h5 {
+    margin: 16px auto 0 auto;
+}
+
+.grey-bg {
+    background-color: var(--light-grey);
+    padding: 1px 0;
 }
 
 .sidenav__news {
     border: 1px solid var(--grey-transparent);
+    border-radius: 5px;
 }
 
-.sidenav__contact h4, .sidenav__news h4 {
-    background: var(--grey);
-    color: var(--white);
+.sidenav__news div {
+    margin-left: 16px;
+}
+
+.news__time {
+    font-size: 16px;
+    font-style: italic;
+    margin: auto;
 }
 
 /* Home page */
@@ -236,16 +267,21 @@ nav a {
     padding-left: 16px;
 }
 
-.teachers__grid {
+.teachers-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     max-width: 812px;
     margin: 0 auto 150px auto;
 }
 
-.teachers__grid img {
+.teachers-container img {
     max-width: 400px;
     padding-right: 16px;
+}
+
+.teachers__grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 64px;
 }
 
 .club {
@@ -318,4 +354,39 @@ nav a {
 
 .p-brown {
     color: var(--brown);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 64px 0 128px 0;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+footer h2 {
+    color: var(--white);
+}
+
+footer ul {
+    padding: 0 16px 16px 16px;
+}
+
+footer a {
+    border: 1px solid var(--white);
+    padding: 16px;
+    border-radius: 5px;
+}
+
+footer i {
+    margin-right: 4px;
+}
+
+.footer-contact a i {
+    margin-top: 16px;
+}
+
+.footer-social i {
+    font-size: 3em;
 }

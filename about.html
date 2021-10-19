@@ -15,23 +15,87 @@
 
   <body>
     <header>
-      <a href="index.html"
-        ><img src="images/Logo.png" alt="Tønsberg Science Museum Logo"
-      /></a>
-      <input type="text" id="searchbar" placeholder="Search the site" />
-      <div>
-        <a href="exhibitions.html">Exhibitions</a>
-        <a href="events.html">Events and activities</a>
-        <a href="about.html">About us</a>
-        <a href="support.html">Support</a>
-      </div>
-      <div>
+      <section class="header-top">
+        <div>
+          <a class="logo" href="index.html"
+            ><img
+              class="logo-img"
+              src="images/TSM-Logo.jpg"
+              alt="Tønsberg Science Museum Logo"
+            />
+            <p class="logo-text">
+              Tønsberg<br />
+              <span class="logo-name">Science Museum</span><br />
+              <span class="logo-sub">explore together</span>
+            </p>
+          </a>
+        </div>
+        <div class="search-container">
+          <i class="fas fa-search search-icon"></i>
+          <input
+            type="text"
+            id="searchbar"
+            placeholder="Search the site..."
+            class="search-bar"
+          />
+          <input type="submit" value="Explore" class="search-button" />
+        </div>
+      </section>
+      <nav>
+        <a href="exhibitions.html" class="nav-exhibitions">Exhibitions</a>
+
+        <a href="events.html" class="nav-events">Events and activities</a>
+
+        <a href="about.html" class="nav-about">About us</a>
+
+        <a href="support.html" class="nav-support">Support</a>
+      </nav>
+      <div class="breadcrumb">
         <a href="index.html"><i class="fas fa-home"></i></a>
-        <span>About us</span>
       </div>
     </header>
 
     <main>
+      <h1>About us</h1>
+      <section class="sidenav-container">
+        <div class="sidenav__contact">
+          <h4>Contact</h4>
+          <div>
+            <h5>Location</h5>
+            <p>Graabrødregaten 17</p>
+          </div>
+          <div class="grey-bg">
+            <h5>Phone</h5>
+            <p>+47 12345678</p>
+          </div>
+          <div>
+            <h5>Email</h5>
+            <p>tbgscience@museum.no</p>
+          </div>
+        </div>
+        <div class="sidenav__news">
+          <h4>News</h4>
+          <div>
+            <h6>Visiting Professor of Aeronautics</h6>
+            <p class="news__time">01.11.21 - 06.11.21</p>
+            <img src="images/Science.jpg" alt="Prof Sheila Widnall" />
+          </div>
+          <div>
+            <h6>Night in the Museum</h6>
+            <p class="news__time">Fridays from 18:00</p>
+            <img src="images/Nightsmall.jpg" alt="Museum at night" />
+          </div>
+          <div>
+            <h6>Energetica Exhibition on loan</h6>
+            <p class="news__time">06.12.21 - 09.01.22</p>
+            <img
+              src="images/Energeticaone.jpg"
+              alt="Energetica
+            exhibition"
+            />
+          </div>
+        </div>
+      </section>
       <section>
         <h2>Explore together</h2>
         <p><i class="fas fa-globe-europe"></i></p>
@@ -195,15 +259,17 @@
         </ul>
         <a href="about.html"><i class="fas fa-info-circle"></i> About us</a>
       </div>
-      <div>
+      <div class="footer-contact">
         <h2>Contact us</h2>
         <p><i class="fas fa-phone-alt"></i> +47 12345678</p>
-        <p><i class="fas fa-envelope"></i> tbgscience@museum.no</p>
+        <p class="footer__email">
+          <i class="fas fa-envelope"></i> tbgscience@museum.no
+        </p>
         <a href="support.html"
           ><i class="fas fa-question-circle"></i> Support</a
         >
       </div>
-      <div>
+      <div class="footer-social">
         <h2>Social</h2>
         <p><i class="fab fa-facebook-square"></i></p>
         <p><i class="fab fa-instagram-square"></i></p>
