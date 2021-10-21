@@ -55,11 +55,114 @@
       </div>
     </header>
 
-    <main>
-      <h1>Support</h1>
-      <section class="sidenav-container">
-        <div class="sidenav__contact">
-          <h4>Contact</h4>
+    <h1>Support</h1>
+
+    <div class="flex-container">
+      <main>
+        <section>
+          <h2>Ask us a question</h2>
+          <p><i class="fas fa-question-circle"></i></p>
+          <p>
+            We want to Ensure that your visit becomes a good experience. If you
+            have any questions don't hesitate to ask us. Use the form below to
+            send us an enquiry and we will make sure to respond as soon as
+            possible.
+          </p>
+          <h3>Ask away!</h3>
+          <form>
+            <input type="text" id="name" placeholder="Full name" />
+            <input type="text" id="email" placeholder="Email" />
+            <input type="textarea" id="comment" placeholder="Comment" />
+            <input type="submit" id="submit" />
+          </form>
+          <img src="images/Rocket.jpg" alt="Image of a museum room." />
+        </section>
+        <section>
+          <h2>Book a guided tour</h2>
+          <p><i class="fas fa-calendar-check"></i></p>
+          <p>
+            Interested in booking a guided tour at our museum? Even if you come
+            by your self or with a group we will acommodate you accordingly.
+          </p>
+          <p>
+            <span>NB!</span> If you would like to organise a guided tour for
+            your group of 6 or more people, please contact us to arrange the
+            tour.
+          </p>
+          <h3>Your information</h3>
+          <form>
+            <input type="text" id="name" placeholder="Full name" />
+            <input type="text" id="phone" placeholder="Phone" />
+            <input type="text" id="email" placeholder="Email" />
+            <input type="number" id="number" placeholder="How many" />
+            <h3>Pick a time</h3>
+            <div>
+              <label for="31-11-21__12">31.11.21 - 12:00</label>
+              <input type="radio" id="30-11-21__12" />
+              <label for="01-12-21__12">01.12.21 - 12:00</label>
+              <input type="radio" id="01-12-21__12" />
+              <label for="03-12-21__12">03.12.21 - 12:00</label>
+              <input type="radio" id="03-12-21__12" />
+              <label for="03-12-21__16">03.12.21 - 16:00</label>
+              <input type="radio" id="03-12-21__16" />
+              <label for="07-12-21__12">07.12.21 - 12:00</label>
+              <input type="radio" id="07-12-21__12" />
+              <label for="08-12-21__12">08.12.21 - 12:00</label>
+              <input type="radio" id="08-12-21__12" />
+              <label for="10-12-21__12">10.12.21 - 12:00</label>
+              <input type="radio" id="10-12-21__12" />
+              <label for="10-12-21__16">10.12.21 - 16:00</label>
+              <input type="radio" id="10-12-21__16" />
+              <div>
+                <input type="submit" id="submit" />
+              </div>
+            </div>
+          </form>
+        </section>
+        <section>
+          <div>
+            <h4>Contact</h4>
+            <h5>Location</h5>
+            <p>Graabrødregaten 17</p>
+            <h5>Phone</h5>
+            <p>+47 12345678</p>
+            <h5>Email</h5>
+            <p>tbgscience@museum.no</p>
+          </div>
+          <div>
+            <h4>News</h4>
+            <div>
+              <h5>Visiting Professor of Aeronautics</h5>
+              <p>01.11.21 - 06.11.21</p>
+              <img
+                src="images/Science.jpg"
+                alt="Image of Prof Sheila Widnall"
+              />
+            </div>
+            <div>
+              <h5>Night in the Museum</h5>
+              <p>Fridays from 18:00</p>
+              <img
+                src="images/Nightsmall.jpg"
+                alt="Image of the museum at night"
+              />
+            </div>
+            <div>
+              <h5>Energetica Exhibition on loan</h5>
+              <p>06.12.21 - 09.01.22</p>
+              <img
+                src="images/Energeticaone.jpg"
+                alt="Image of the Energetica
+              exhibition"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <div class="contact-cont">
+          <h4 class="aside-h4">Contact</h4>
           <div>
             <h5>Location</h5>
             <p>Graabrødregaten 17</p>
@@ -73,21 +176,29 @@
             <p>tbgscience@museum.no</p>
           </div>
         </div>
-        <div class="sidenav__news">
-          <h4>News</h4>
+        <div class="news-cont">
+          <h4 class="aside-h4">News</h4>
           <div>
             <h6>Visiting Professor of Aeronautics</h6>
-            <p class="news__time">01.11.21 - 06.11.21</p>
-            <img src="images/Science.jpg" alt="Prof Sheila Widnall" />
+            <p>01.11.21 - 06.11.21</p>
+            <img
+              src="images/Science.jpg"
+              alt="Prof Sheila Widnall"
+              class="img-border"
+            />
           </div>
           <div>
             <h6>Night in the Museum</h6>
-            <p class="news__time">Fridays from 18:00</p>
-            <img src="images/Nightsmall.jpg" alt="Museum at night" />
+            <p>Fridays from 18:00</p>
+            <img
+              src="images/Nightsmall.jpg"
+              alt="Museum at night"
+              class="img-border"
+            />
           </div>
           <div>
             <h6>Energetica Exhibition on loan</h6>
-            <p class="news__time">06.12.21 - 09.01.22</p>
+            <p>06.12.21 - 09.01.22</p>
             <img
               src="images/Energeticaone.jpg"
               alt="Energetica
@@ -95,103 +206,8 @@
             />
           </div>
         </div>
-      </section>
-      <section>
-        <h2>Ask us a question</h2>
-        <p><i class="fas fa-question-circle"></i></p>
-        <p>
-          We want to Ensure that your visit becomes a good experience. If you
-          have any questions don't hesitate to ask us. Use the form below to
-          send us an enquiry and we will make sure to respond as soon as
-          possible.
-        </p>
-        <h3>Ask away!</h3>
-        <form>
-          <input type="text" id="name" placeholder="Full name" />
-          <input type="text" id="email" placeholder="Email" />
-          <input type="textarea" id="comment" placeholder="Comment" />
-          <input type="submit" id="submit" />
-        </form>
-        <img src="images/Rocket.jpg" alt="Image of a museum room." />
-      </section>
-      <section>
-        <h2>Book a guided tour</h2>
-        <p><i class="fas fa-calendar-check"></i></p>
-        <p>
-          Interested in booking a guided tour at our museum? Even if you come by
-          your self or with a group we will acommodate you accordingly.
-        </p>
-        <p>
-          <span>NB!</span> If you would like to organise a guided tour for your
-          group of 6 or more people, please contact us to arrange the tour.
-        </p>
-        <h3>Your information</h3>
-        <form>
-          <input type="text" id="name" placeholder="Full name" />
-          <input type="text" id="phone" placeholder="Phone" />
-          <input type="text" id="email" placeholder="Email" />
-          <input type="number" id="number" placeholder="How many" />
-          <h3>Pick a time</h3>
-          <div>
-            <label for="31-11-21__12">31.11.21 - 12:00</label>
-            <input type="radio" id="30-11-21__12" />
-            <label for="01-12-21__12">01.12.21 - 12:00</label>
-            <input type="radio" id="01-12-21__12" />
-            <label for="03-12-21__12">03.12.21 - 12:00</label>
-            <input type="radio" id="03-12-21__12" />
-            <label for="03-12-21__16">03.12.21 - 16:00</label>
-            <input type="radio" id="03-12-21__16" />
-            <label for="07-12-21__12">07.12.21 - 12:00</label>
-            <input type="radio" id="07-12-21__12" />
-            <label for="08-12-21__12">08.12.21 - 12:00</label>
-            <input type="radio" id="08-12-21__12" />
-            <label for="10-12-21__12">10.12.21 - 12:00</label>
-            <input type="radio" id="10-12-21__12" />
-            <label for="10-12-21__16">10.12.21 - 16:00</label>
-            <input type="radio" id="10-12-21__16" />
-            <div>
-              <input type="submit" id="submit" />
-            </div>
-          </div>
-        </form>
-      </section>
-      <section>
-        <div>
-          <h4>Contact</h4>
-          <h5>Location</h5>
-          <p>Graabrødregaten 17</p>
-          <h5>Phone</h5>
-          <p>+47 12345678</p>
-          <h5>Email</h5>
-          <p>tbgscience@museum.no</p>
-        </div>
-        <div>
-          <h4>News</h4>
-          <div>
-            <h5>Visiting Professor of Aeronautics</h5>
-            <p>01.11.21 - 06.11.21</p>
-            <img src="images/Science.jpg" alt="Image of Prof Sheila Widnall" />
-          </div>
-          <div>
-            <h5>Night in the Museum</h5>
-            <p>Fridays from 18:00</p>
-            <img
-              src="images/Nightsmall.jpg"
-              alt="Image of the museum at night"
-            />
-          </div>
-          <div>
-            <h5>Energetica Exhibition on loan</h5>
-            <p>06.12.21 - 09.01.22</p>
-            <img
-              src="images/Energeticaone.jpg"
-              alt="Image of the Energetica
-            exhibition"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
+      </aside>
+    </div>
 
     <footer>
       <div>
