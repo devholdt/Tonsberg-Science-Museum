@@ -1,15 +1,16 @@
 /* Global */
 :root {
-    --white: #fff;
-    --light-grey: #ccc;
+    --white: #FFF;
+    --light-grey: #CCC;
     --grey: #343434;
-    --grey-transparent: #34343455;
+    --grey-transparent: #343434B9;
     --blue: #1478C8;
-    --blue-transparent: #288bdcb9;
+    --blue-transparent: #288BDCB9;
     --light-blue: #288CDC;
     --dark-blue: #06467A;
     --green: #3FA652;
-    --green-transparent: #3FA65215;
+    --lightgreen-transparent: #3FA65219;
+    --green-transparent: #3FA652b9;
     --dark-green: #21552A;
     --gold: #C78114;
     --brown: #7A4A00;
@@ -77,6 +78,10 @@ h6 {
 a {
     text-decoration: none;
     color: var(--white);
+}
+
+img {
+    border-radius: 5px;
 }
 
 .flex-container {
@@ -165,7 +170,7 @@ nav {
     text-align: center;
     height: 63px;
     position: relative;
-    bottom: 32px;
+    bottom: 16px;
 }
 
 nav a {
@@ -183,6 +188,10 @@ nav a {
     border-left: 3px solid var(--dark-blue);
 }
 
+.nav-exhibitions__picked, .nav-exhibitions:hover {
+    box-shadow: inset 0 0 0 32px var(--brown-transparent);
+}
+
 .nav-events {
     background-image: url(../images/Family.jpg);
     background-size: cover;
@@ -190,11 +199,19 @@ nav a {
     border-left: 3px solid var(--dark-blue);
 }
 
+.nav-events__picked, .nav-events:hover {
+    box-shadow: inset 0 0 0 32px var(--salmon-transparent);
+}
+
 .nav-about {
     background-image: url(../images/Exterior.jpg);
     background-size: cover;
     background-position-y: 55%;
     border-left: 3px solid var(--dark-blue);
+}
+
+.nav-about__picked, .nav-about:hover {
+    box-shadow: inset 0 0 0 32px var(--green-transparent);
 }
 
 .nav-support {
@@ -205,11 +222,61 @@ nav a {
     border-right: 3px solid var(--dark-blue);
 }
 
+.nav-support__picked, .nav-support:hover {
+    box-shadow: inset 0 0 0 32px var(--grey-transparent);
+}
+
+.breadcrumb {
+    border-bottom: 1px solid var(--light-grey);
+    padding: 0 0 16px 32px;
+    width: 1640px;
+    margin: auto;
+}
+
 .breadcrumb a {
-    background-color: var(--blue);
-    padding: 11px 13px;
-    font-size: 1.5em;
-    margin-left: 140px;
+    display: inline;
+    background: var(--blue);
+    list-style: none;
+}
+
+.breadcrumb__home {
+    border-radius: 10px 0 0 10px;
+    font-size: 1.2em;
+    padding: 14px 0 13px 0;
+}
+
+.breadcrumb__home i {
+    padding: 15px 16px 17px 16px;
+    transition: 0.3s;
+}
+
+.breadcrumb__home i:hover {
+    transform: rotate(360deg);
+}
+
+.breadcrumb__item {
+    padding: 17px 16px 14px 16px;
+    border-radius: 0 10px 10px 0;
+}
+
+.breadcrumb__exhibitions {
+    background: var(--brown);
+    color: var(--white);
+}
+
+.breadcrumb__events {
+    background: var(--salmon);
+    color: var(--white);
+}
+
+.breadcrumb__about {
+    background: var(--green);
+    color: var(--white);
+}
+
+.breadcrumb__support {
+    background: var(--grey);
+    color: var(--white);
 }
 
 /* Side menu */
@@ -305,7 +372,7 @@ nav a {
 .club-cont {
     border: 2px solid var(--green);
     border-radius: 5px;
-    background: var(--green-transparent);
+    background: var(--lightgreen-transparent);
     display: grid;
     grid-template-columns: auto 1fr 1fr;
     margin: 32px auto;
@@ -407,6 +474,9 @@ nav a {
     object-position: right;
 }
 
+/* Events and activities page */
+
+
 /* Footer */
 footer {
     display: flex;
@@ -441,4 +511,9 @@ footer i {
 
 .footer-social i {
     font-size: 3em;
+}
+
+/* Temporary */
+main img {
+    max-width: 500px;
 }
