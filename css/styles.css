@@ -514,6 +514,125 @@ nav a {
     object-fit: cover;
 }
 
+.now__club {
+    display: flex;
+    background: var(--lightgreen-transparent);
+    border: 3px solid var(--green);
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px auto 32px auto;
+}
+
+.now__text {
+    margin-right: 16px;
+}
+
+.now__text img {
+    width: 200px;
+    margin-left: 100px;
+}
+
+.now__img {
+    display: flex;
+    gap: 16px;
+}
+
+.now__img img {
+    width: 189px;
+    height: 364px;
+    object-fit: cover;
+    border: 3px solid var(--green);
+}
+
+.nov {
+    display: flex;
+    background: var(--light-grey);
+    padding: 16px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+
+.nov div {
+    margin-right: 16px;
+}
+
+.nov img {
+    width: 405px;
+    height: 364px;
+    object-fit: cover;
+}
+
+.dec {
+    display: flex;
+    background: var(--light-grey);
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.dec__text {
+    margin-right: 16px;
+}
+
+.dec__img {
+    display: flex;
+    gap: 16px;
+}
+
+.dec__img img {
+    flex: 2;
+    height: 364px;
+    width: 375px;
+    object-fit: cover;
+}
+
+/* About us page */
+.about-main {
+    display: flex;
+    gap: 16px;
+}
+
+.about-explore {
+    background: var(--light-grey);
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 414px;
+}
+
+.about-visit {
+    background: var(--light-grey);
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 414px;
+}
+
+.about-main p {
+    margin: 4px auto 16px auto;
+}
+
+.about-main img {
+    width: 360px;
+    margin-bottom: 32px;
+}
+
+.about-main i {
+    font-size: 4em;
+    margin: 32px auto;
+}
+
+.about-center {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.about-hours {
+    margin: 4px 0 16px 0;
+}
+
+.about-hours th {
+    text-align: right;
+    padding-right: 8px;
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -528,8 +647,8 @@ footer h2 {
     color: var(--white);
 }
 
-footer ul {
-    padding: 0 16px 16px 16px;
+footer table {
+    margin-bottom: 32px;
 }
 
 footer a {
