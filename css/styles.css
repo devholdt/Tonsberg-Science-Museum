@@ -1,8 +1,9 @@
 /* Global */
 :root {
     --white: #FFF;
-    --light-grey: #CCC;
-    --grey: #343434;
+    --grey: #ccc;
+    --light-grey: #eee;
+    --dark-grey: #343434;
     --grey-transparent: #343434B9;
     --blue: #1478C8;
     --blue-transparent: #288BDCB9;
@@ -22,7 +23,7 @@
 body {
     font-family: "Circe Rounded", Arial, Helvetica, sans-serif;
     margin: auto;
-    color: var(--grey);
+    color: var(--dark-grey);
 }
 
 main {
@@ -93,7 +94,7 @@ img {
 
 .flex-container main {
     flex: 3;
-    border-right: 1px solid var(--grey-transparent);
+    border-right: 1px solid var(--grey);
     padding: 32px 62px 32px 0;
 }
 
@@ -124,7 +125,7 @@ img {
 }
 
 .logo-name {
-    border-bottom: 0.5px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
 }
 
 .logo-sub {
@@ -134,7 +135,7 @@ img {
 
 .search-container {
     display: inline-flex;
-    border: 1px solid var(--light-grey);
+    border: 1px solid var(--grey);
     border-radius: 5px;
     position: relative;
     left: 1300px;
@@ -227,7 +228,7 @@ nav a {
 }
 
 .breadcrumb {
-    border-bottom: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--grey);
     padding: 0 0 16px 32px;
     width: 1640px;
     margin: auto;
@@ -275,7 +276,7 @@ nav a {
 }
 
 .breadcrumb__support {
-    background: var(--grey);
+    background: var(--dark-grey);
     color: var(--white);
 }
 
@@ -314,7 +315,7 @@ nav a {
 }
 
 .img-border {
-    border-bottom: 1px solid var(--grey-transparent);
+    border-bottom: 1px solid var(--grey);
     padding-bottom: 32px;
 }
 
@@ -333,7 +334,7 @@ nav a {
 }
 
 .aside-h4 {
-    background: var(--grey);
+    background: var(--dark-grey);
     color: white;
     margin: auto;
     padding: 5px;
@@ -341,7 +342,7 @@ nav a {
 }
 
 .grey-bg {
-    background-color: var(--light-grey);
+    background-color: var(--grey);
     padding: 1px 0;
 }
 
@@ -447,35 +448,71 @@ nav a {
     margin: 64px auto;
 }
 
+.exhibition h2 {
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 8px;
+}
+
 .quote {
     font-style: italic;
+    font-family: "filson soft", Arial, Helvetica, sans-serif;
     border-left: 5px solid var(--grey-transparent);
-    padding-left: 16px;
+    padding: 8px;
     text-align: center;
     font-weight: 350;
     font-size: 16px;
+    margin-bottom: 4px;
 }
 
 .quote__name {
     text-align: right;
+    font-family: "filson soft", Arial, Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: 350;
+    margin-top: 0;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 8px;
 }
 
 .robotics h2 {
-    color: var(--grey);
+    color: var(--dark-grey);
 }
 
 .robotics img {
-    height: 310px;
+    height: 320px;
 }
 
 .biology img {
-    height: 500px;
+    height: 520px;
     object-position: right;
 }
 
 /* Events and activities page */
+.happening h2 {
+    background: var(--blue);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
 
+.now__night {
+    display: flex;
+    background: var(--light-grey);
+    padding: 16px;
+    gap: 16px;
+    border-radius: 5px;
+}
+
+.now__night div {
+    flex: 2;
+}
+
+.now__night img {
+    height: 364px;
+    flex: 2;
+    object-fit: cover;
+}
 
 /* Footer */
 footer {
