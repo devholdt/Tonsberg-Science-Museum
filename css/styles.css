@@ -28,7 +28,6 @@ body {
 
 main {
     width: 1214px;
-    margin: auto;
 }
 
 p {
@@ -241,7 +240,6 @@ nav a {
 }
 
 .breadcrumb__home {
-    border-radius: 10px 0 0 10px;
     font-size: 1.2em;
     padding: 14px 0 13px 0;
 }
@@ -255,9 +253,15 @@ nav a {
     transform: rotate(360deg);
 }
 
+.breadcrumb__home:hover .fa-home:before {
+    content: "\279C";
+    display: inline-block;
+    transform: rotate(180deg);
+    padding-right: 2px;
+}
+
 .breadcrumb__item {
     padding: 17px 16px 14px 16px;
-    border-radius: 0 10px 10px 0;
 }
 
 .breadcrumb__exhibitions {
@@ -333,12 +337,13 @@ nav a {
     font-weight: 350;
 }
 
-.aside-h4 {
+aside h4 {
     background: var(--dark-grey);
     color: white;
     margin: auto;
     padding: 5px;
     text-align: left;
+    border-radius: 5px 5px 0 0;
 }
 
 .grey-bg {
@@ -669,7 +674,20 @@ footer i {
     font-size: 3em;
 }
 
+/* Support page */
+.support {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.support section {
+    background: var(--light-grey);
+    padding: 30px;
+    border-radius: 5px;
+}
+
 /* Temporary */
 main img {
-    max-width: 500px;
+    max-width: 354px;
 }
