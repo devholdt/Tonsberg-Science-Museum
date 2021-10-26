@@ -17,6 +17,7 @@
     --brown: #7A4A00;
     --brown-transparent: #7A4A00b9;
     --salmon: #FC7F69;
+    --dark-salmon: #FF5237;
     --salmon-transparent: #FC7F69b9;
 }
 
@@ -160,6 +161,10 @@ img {
     border: none;
     color: var(--white);
     padding: 8px;
+}
+
+.search-button:hover {
+    cursor: pointer;
 }
 
 nav {
@@ -338,7 +343,7 @@ nav a {
 
 aside h4 {
     background: var(--dark-grey);
-    color: white;
+    color: var(--white);
     margin: auto;
     padding: 5px;
     text-align: left;
@@ -672,12 +677,20 @@ aside h4 {
 
 .fieldset-container {
     display: grid;
-    gap: 16px;
     margin: 32px auto;
     width: 300px;
     border-radius: 5px;
     border: 1px solid var(--grey-transparent);
     padding: 16px;
+}
+
+.fieldset-container input {
+    margin-bottom: 16px;
+}
+
+.fieldset-container label {
+    font-size: 18px;
+    color: var(--dark-grey);
 }
 
 .support input, textarea {
@@ -692,26 +705,52 @@ textarea {
     max-width: 278px;
     min-height: 250px;
     max-height: 250px;
+    margin-bottom: 16px;
 }
 
 .select {
-    padding: 6px 15px;
-    margin: auto;
-    border-radius: 5px;
-    background: var(--grey);
+    border-top: 1px solid var(--grey-transparent);
+    padding-top: 32px;
+    margin-top: 32px;
+    text-align: center;
 }
 
 .select label {
-    padding: 0 12px;
     font-size: 22px;
     font-weight: 350;
+    margin-right: 16px;
 }
 
 .select select {
-    padding: 8px 6px;
+    padding: 4px 8px;
     border-radius: 5px;
     border: 1px solid var(--grey-transparent);
     font-size: 18px;
+}
+
+.notabene {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: var(--white);
+    border: 2px solid var(--dark-grey);
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 16px;
+}
+
+.notabene p {
+    margin: auto;
+}
+
+.notabene i {
+    font-size: 2em;
+    margin-right: 8px;
+}
+
+.notabene-text {
+    font-weight: 300;
+    line-height: 1;
+    font-size: 16px;
 }
 
 .support legend {
@@ -720,14 +759,50 @@ textarea {
     font-weight: 600;
 }
 
-.notabene {
-    color: var(--salmon);
-    font-weight: 600;
+.date {
+    border-top: 1px solid var(--grey-transparent);
+    border-bottom: 1px solid var(--grey-transparent);
+    margin: 32px auto;
+    padding: 32px 0;
 }
 
-.date {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.date input {
+    display: none;
+}
+
+.date-top {
+    font-size: 22px;
+    font-weight: 350;
+}
+
+.date label {
+    display: inline-block;
+    text-align: center;
+    width: 124px;
+    cursor: pointer;
+    background: var(--white);
+    color: var(--dark-grey);
+    border-radius: 5px;
+    margin: 4px 2px;
+    padding: 10px;
+}
+
+#date-1:checked~label[for="date-1"], 
+#date-2:checked~label[for="date-2"], 
+#date-3:checked~label[for="date-3"], 
+#date-4:checked~label[for="date-4"], 
+#date-5:checked~label[for="date-5"], 
+#date-6:checked~label[for="date-6"], 
+#date-7:checked~label[for="date-7"], 
+#date-8:checked~label[for="date-8"] {
+    background: var(--green-transparent);
+    color: var(--white);
+}
+
+.date-text {
+    font-style: italic;
+    font-weight: 300;
+   text-align: center;
 }
 
 .support input[type="submit"] {
@@ -737,7 +812,7 @@ textarea {
     font-family: filson-soft, Arial, Helvetica, sans-serif;
     font-weight: 300;
     background: var(--blue);
-    color: white;
+    color: var(--white);
     border: none;
 }
 
