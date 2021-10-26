@@ -155,7 +155,7 @@ img {
 
 .search-button {
     background: var(--light-blue);
-    font-family: "Circe Rounded", Arial, Helvetica, sans-serif;
+    font-family: circe-rounded, Arial, Helvetica, sans-serif;
     font-size: 18px;
     border: none;
     color: var(--white);
@@ -389,7 +389,7 @@ aside h4 {
 }
 
 .club-join {
-    font-family: "filson soft", Arial, Helvetica, sans-serif;
+    font-family: filson-soft, Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 600;
     width: 180px;
@@ -459,7 +459,7 @@ aside h4 {
 
 .quote {
     font-style: italic;
-    font-family: "filson soft", Arial, Helvetica, sans-serif;
+    font-family: filson-soft, Arial, Helvetica, sans-serif;
     border-left: 5px solid var(--grey-transparent);
     padding: 8px;
     text-align: center;
@@ -470,7 +470,7 @@ aside h4 {
 
 .quote__name {
     text-align: right;
-    font-family: "filson soft", Arial, Helvetica, sans-serif;
+    font-family: filson-soft, Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 350;
     margin-top: 0;
@@ -716,7 +716,7 @@ textarea {
 
 .support legend {
     font-size: 30px;
-    font-family: "filson soft", Arial, Helvetica, sans-serif;
+    font-family: filson-soft, Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
@@ -725,18 +725,16 @@ textarea {
     font-weight: 600;
 }
 
-.time label {
-    display: block;
-    font-family: "filson soft", Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    margin-bottom: 4px;
+.date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .support input[type="submit"] {
     width: 154px;
     margin: auto;
     font-size: 31px;
-    font-family: "filson soft", Arial, Helvetica, sans-serif;
+    font-family: filson-soft, Arial, Helvetica, sans-serif;
     font-weight: 300;
     background: var(--blue);
     color: white;
