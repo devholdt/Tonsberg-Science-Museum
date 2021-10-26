@@ -47,8 +47,7 @@ h1 {
 }
 
 h2 {
-    font-size: 38px;
-    font-weight: 600;
+    font-size: 36px;
     color: var(--blue);
     margin: auto;
 }
@@ -590,7 +589,7 @@ aside h4 {
     object-fit: cover;
 }
 
-/* About us page */
+/* About Us and Support pages */
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -620,14 +619,19 @@ aside h4 {
     margin-bottom: 32px;
 }
 
-.about i {
-    font-size: 4em;
-    margin: 32px auto;
+.center i {
+    font-size: 2.1em;
+    margin-right: 8px;
+    display: inline-block;
 }
 
 .center {
+    margin: 32px auto 64px auto;
     text-align: center;
-    padding-bottom: 16px;
+}
+
+.center h2 {
+   display: inline;
 }
 
 .about-hours {
@@ -639,7 +643,6 @@ aside h4 {
     padding-right: 8px;
 }
 
-/* Support page */
 .support {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -650,11 +653,6 @@ aside h4 {
     background: var(--light-grey);
     padding: 30px;
     border-radius: 5px;
-}
-
-.support i {
-    font-size: 4em;
-    margin: 32px auto;
 }
 
 .support p {
@@ -722,28 +720,16 @@ textarea {
     font-weight: 600;
 }
 
-.fieldset-time {
-    border-radius: 5px;
-    border: 1px solid var(--grey-transparent);
+.notabene {
+    color: var(--salmon);
+    font-weight: 600;
 }
 
-.boxed label {
-    display: grid;
-    margin: 8px auto;
-    padding: 16px;
+.time label {
+    display: block;
+    font-family: "filson soft", Arial, Helvetica, sans-serif;
     font-size: 18px;
-    text-align: center;
-    background: var(--green-transparent);
-    border-radius: 5px;
-    
-}
-
-.boxed input[type="radio"] {
-    display: none;
-}
-
-.boxed input[type="radio"]:checked + label {
-    background: var(--green);
+    margin-bottom: 4px;
 }
 
 .support input[type="submit"] {
