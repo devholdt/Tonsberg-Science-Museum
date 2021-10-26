@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: "Circe Rounded", Arial, Helvetica, sans-serif;
+    font-family: circe-rounded, Arial, Helvetica, Arial, Helvetica, sans-serif;
     margin: auto;
     color: var(--dark-grey);
 }
@@ -34,16 +34,17 @@ p {
     font-size: 18px;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: "Filson Soft", Arial, Helvetica, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: filson-soft, Arial, Helvetica, sans-serif;
 }
 
 h1 {
     font-size: 96px;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
     letter-spacing: -1.5px;
     line-height: 1;
+    margin: 128px auto;
 }
 
 h2 {
@@ -167,7 +168,6 @@ nav {
     background: var(--blue);
     margin: auto;
     text-align: center;
-    height: 63px;
     position: relative;
     bottom: 16px;
 }
@@ -177,7 +177,7 @@ nav a {
     padding: 18px 0;
     width: 260px;
     font-size: 21px;
-    box-shadow: inset 0 0 0 32px var(--blue-transparent);
+    box-shadow: inset 0 0 0 34px var(--blue-transparent);
 }
 
 .nav-exhibitions {
@@ -188,7 +188,7 @@ nav a {
 }
 
 .nav-exhibitions__picked, .nav-exhibitions:hover {
-    box-shadow: inset 0 0 0 32px var(--brown-transparent);
+    box-shadow: inset 0 0 0 34px var(--brown-transparent);
 }
 
 .nav-events {
@@ -199,7 +199,7 @@ nav a {
 }
 
 .nav-events__picked, .nav-events:hover {
-    box-shadow: inset 0 0 0 32px var(--salmon-transparent);
+    box-shadow: inset 0 0 0 34px var(--salmon-transparent);
 }
 
 .nav-about {
@@ -210,7 +210,7 @@ nav a {
 }
 
 .nav-about__picked, .nav-about:hover {
-    box-shadow: inset 0 0 0 32px var(--green-transparent);
+    box-shadow: inset 0 0 0 34px var(--green-transparent);
 }
 
 .nav-support {
@@ -222,7 +222,7 @@ nav a {
 }
 
 .nav-support__picked, .nav-support:hover {
-    box-shadow: inset 0 0 0 32px var(--grey-transparent);
+    box-shadow: inset 0 0 0 34px var(--grey-transparent);
 }
 
 .breadcrumb {
