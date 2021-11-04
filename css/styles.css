@@ -568,15 +568,11 @@ aside h4 {
     border-radius: 5px;
     padding: 16px;
     margin: 16px auto 32px auto;
-}
-
-.now__text {
-    margin-right: 16px;
+    gap: 16px;
 }
 
 .now__text img {
     width: 200px;
-    margin-left: 100px;
 }
 
 .now__img {
@@ -635,7 +631,7 @@ aside h4 {
 /* About Us and Support pages */
 .grid-container {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 1fr 1fr;
     gap: 32px;
 }
 
@@ -645,10 +641,12 @@ aside h4 {
 
 .grid-left {
     border-right: 1px solid var(--grey);
+    padding-right: 32px;
 }
 
 .grid-container img {
-    width: 100%;
+    width: 380px;
+    margin: 32px auto;
 }
 
 .center i {
@@ -992,6 +990,10 @@ footer i {
         padding: 0;
     }
 
+    main {
+        gap: 32px;
+    }
+
     .header-top {
         border-bottom: 48px solid var(--blue);
         box-shadow: 1px 1px 5px var(--grey-transparent);
@@ -1042,12 +1044,11 @@ footer i {
     }
 
     .grid-container {
-        gap: 32px;
         grid-template-columns: 1fr 1fr;
     }
-    
-    .grid-left {
-        padding-right: 32px;
+
+    .fieldset-container {
+        width: auto;
     }
 
     footer {
@@ -1058,10 +1059,45 @@ footer i {
 
 @media (min-width: 768px) and (max-width: 970px) {
     .news-cont img {
-        width: 700px;
+        width: 750px;
         object-position: 50% 65%;
         border-bottom: 1px solid var(--grey);
         padding-bottom: 32px;
+    }
+
+    .grid-container img {
+        width: 350px;
+        margin: 16px auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 860px) {
+    .news-cont img {
+        width: 650px;
+    }
+
+    .exhibition img {
+        width: 300px;
+    }
+
+    .cosmology-img img {
+        object-position: 35%;
+    }
+
+    .evolution-img img {
+        object-position: 35%;
+    }
+
+    .biology-img img {
+        object-position: 96%;
+    }
+
+    .ecology-img img {
+        object-position: 70%;
+    }
+
+    .grid-container img {
+        width: 300px;
     }
 }
 
