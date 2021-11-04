@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <section class="header-top">
       <div>
         <a class="logo" href="index.html"><img class="logo-img" src="images/TSM-Logo.jpg"
@@ -28,6 +28,18 @@
         <i class="fas fa-search search-icon"></i>
         <input type="text" id="searchbar" placeholder="Search the site..." class="search-bar" />
         <input type="submit" value="Explore" class="search-button" />
+      </div>
+      <div class="hamburger-container">
+        <input type="checkbox" id="hamburger-menu">
+        <label for="hamburger-menu" id="bars"><i class="fas fa-bars"></i></label>
+        <div class="hamburger-menu">
+          <a href="index.html" class="hamburger-home"><i class="fas fa-home"></i> Home</a>
+          <a href="exhibitions.html" class="nav-exhibitions"><i class="fas fa-university"></i> Exhibitions</a>
+          <a href="events.html" class="nav-events"><i class="fas fa-calendar-check"></i> Events and activities</a>
+          <a href="about.html" class="nav-about"><i class="fas fa-info-circle"></i> About us</a>
+          <a href="support.html" class="nav-support"><i class="fas fa-question-circle"></i> Support</a>
+        </div>
+        <label for="hamburger-menu" id="bars"><i class="fas fa-bars"></i></label>
       </div>
     </section>
     <nav>
@@ -47,10 +59,12 @@
 
   <h1>Exhibitions</h1>
 
+  <a href="#header" id="top"></a>
+
   <main>
     <div class="container">
       <section class="exhibition">
-        <div id="cosmology">
+        <div>
           <h2 class="p-darkblue">Cosmology</h2>
           <p class="quote">
             "Man must rise above the Earth - to the top of the atmosphere and
@@ -83,7 +97,7 @@
         <div class="evolution-img">
           <img src="images/Primate.jpg" alt="Image of primate skeletons related to the Evolution exhibition." />
         </div>
-        <div id="evolution">
+        <div>
           <h2 class="p-darkgreen">Evolution</h2>
           <p class="quote">
             "Evolution is the fundamental idea in all of life science - in all
@@ -110,7 +124,7 @@
         </div>
       </section>
       <section class="exhibition biology">
-        <div id="biology">
+        <div>
           <h2 class="p-salmon">Biology and Medicine</h2>
           <p class="quote">
             "Biology is the study of complicated things that have the
@@ -147,7 +161,7 @@
         <div class="robotics-img">
           <img src="images/Net.jpg" alt="Image related to the Robotics and AI exhibition." class="robotics__img" />
         </div>
-        <div id="robotics">
+        <div>
           <h2 class="robotics__header">Robotics and AI</h2>
           <p class="quote">
             "There are an endless number of things to discover about robotics.
@@ -163,7 +177,7 @@
         </div>
       </section>
       <section class="exhibition">
-        <div id="ecology">
+        <div>
           <h2 class="p-brown">Ecology</h2>
           <p class="quote">
             "The more clearly we can focus our attention on the wonders and
