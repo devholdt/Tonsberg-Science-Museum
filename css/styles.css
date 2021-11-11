@@ -147,7 +147,7 @@ aside {
     padding: 32px 24px;
     text-align: center;
     font-size: 22px;
-    box-shadow: inset 0 0 0 48px var(--blue-transparent);
+    box-shadow: inset 0 0 0 100px var(--blue-transparent);
 }
 
 .hamburger-menu .hamburger-home {
@@ -168,19 +168,19 @@ aside {
     }
 
     .nav-exhibitions__picked, .nav-exhibitions:hover {
-        box-shadow: inset 0 0 0 34px var(--brown-transparent);
+        box-shadow: inset 0 0 0 100px var(--brown-transparent);
     }
 
     .nav-events__picked, .nav-events:hover {
-        box-shadow: inset 0 0 0 34px var(--salmon-transparent);
+        box-shadow: inset 0 0 0 100px var(--salmon-transparent);
     }
 
     .nav-about__picked, .nav-about:hover {
-        box-shadow: inset 0 0 0 34px var(--green-transparent);
+        box-shadow: inset 0 0 0 100px var(--green-transparent);
     }
 
     .nav-support__picked, .nav-support:hover {
-        box-shadow: inset 0 0 0 34px var(--grey-transparent);
+        box-shadow: inset 0 0 0 100px var(--grey-transparent);
     }
 
     .breadcrumb a:hover {
@@ -1118,9 +1118,10 @@ footer i {
     }
 
     .now__club--img img {
-        width: 100%;
+        width: 97%;
         height: 300px;
         object-position: 100% 20%;
+        margin: auto;
     }
 
     .novdec {
