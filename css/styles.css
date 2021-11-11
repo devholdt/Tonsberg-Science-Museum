@@ -311,7 +311,7 @@ nav a {
 .breadcrumb {
     max-width: 1281px;
     margin: auto;
-    border-bottom: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--grey);
     padding: 0 16px 16px 16px;
 }
 
@@ -376,7 +376,7 @@ nav a {
     object-fit: cover;
     margin: 0 12px 10px 12px;
     padding-bottom: 32px;
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid var(--grey);
     border-radius: 0;
 }
 
@@ -530,7 +530,7 @@ aside h4 {
 
 /* Events and activities page */
 .event {
-    border-bottom: 1px solid var(--grey-transparent);
+    border-bottom: 2px solid var(--grey);
     padding-bottom: 64px;
     margin-bottom: 96px;
 }
@@ -609,6 +609,7 @@ aside h4 {
     font-size: 20px;
     font-style: italic;
     font-weight: 300;
+    text-align: center;
 }
 
 /* About Us and Support pages */
@@ -876,7 +877,7 @@ footer i {
     }
 
     .container {
-        border-bottom: 1px solid var(--grey);
+        border-bottom: 2px solid var(--grey);
         padding-bottom: 64px;
     }
 
@@ -932,12 +933,12 @@ footer i {
 
 /* Tablet and below */
 @media (max-width: 1023px) {
-    .search-container, .footer-social, .logo-sub {
+    nav, .search-container, .footer-social, .logo-sub, .breadcrumb {
         display: none;
     }
 
     h1 {
-        margin: 64px auto;
+        margin: 224px auto 64px auto;
         font-size: 82px;
     }
 
@@ -955,10 +956,6 @@ footer i {
 
     h5 {
         font-size: 20px;
-    }
-
-    #home-header {
-        margin: 128px auto 64px auto;
     }
 
     #top {
@@ -993,6 +990,7 @@ footer i {
         border-bottom: 48px solid var(--blue);
         box-shadow: 1px 1px 5px var(--grey-transparent);
         position: fixed;
+        top: 0;
         width: 100%;
         background: var(--white);
     }
@@ -1146,7 +1144,7 @@ footer i {
     }
 
     .logo {
-        margin: 0;
+        margin: 8px auto 0 12px;
         padding: 0;
         width: 190px;
     }
@@ -1165,6 +1163,7 @@ footer i {
 
     h2 {
         font-size: 1.9em;
+        text-align: center;
     }
 
     h3 {
@@ -1183,20 +1182,16 @@ footer i {
         font-size: 1em;
     }
 
-    #home-header {
-        margin: 64px auto;
-    }
-
     .container {
         width: 100%;
         margin-bottom: 128px;
     }
 
-    .explore-cont img {
+    .explore-cont img, .exhibition img {
         width: 100%;
     }
 
-    .explore-cont, .teachers-cont {
+    .explore-cont, .teachers-cont, .exhibition, .event div {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -1219,5 +1214,75 @@ footer i {
     .news-cont img {
         width: 100%;
         margin: auto;
+    }
+
+    .exhibition {
+        border-bottom: 2px solid var(--grey);
+        padding: 64px 0;
+        margin: auto;
+    }
+
+    .evolution-img, .robotics-img {
+        order: 2;
+    }
+
+    .now__night img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container img {
+        width: 100%;
+    }
+
+    .grid-container h3 {
+        margin-top: 16px;
+    }
+
+    .grid-left {
+        border: none;
+        margin: auto;
+        padding: 0;
+    }
+
+    .grid-left p {
+        border-bottom: 2px solid var(--grey);
+        padding-bottom: 16px;
+    }
+
+    .grid-left table {
+        margin: auto;
+    }
+
+    .grid-left div h3 {
+        text-align: center;
+    }
+
+    .center i {
+        font-size: 1.7em;
+        margin: auto;
+    }
+
+    textarea {
+        min-width: 230px;
+        max-width: 230px;
+    }
+
+    .date label {
+        width: 100%;
+        margin: 8px auto;
+        padding: 8px 0;
+    }
+
+    .support p {
+        border: none;
+    }
+
+    .contact-info p {
+        padding: 0;
     }
 }
