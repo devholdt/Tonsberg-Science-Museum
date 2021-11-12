@@ -57,7 +57,6 @@ h2 {
 
 h3 {
     font-size: 30px;
-    font-weight: 600;
     margin: auto;
 }
 
@@ -96,13 +95,13 @@ main {
 
 .container {
     flex: 3;
-    padding-right: 64px;
+    margin-right: 44px;
 }
 
 aside {
     flex: 1;
-    border-left: 1px solid var(--grey-transparent);
-    padding-left: 32px;
+    border-left: 3px solid var(--grey-transparent);
+    padding-left: 24px;
 }
 
 #top {
@@ -212,9 +211,7 @@ aside {
 .logo {
     display: flex;
     align-items: center;
-    width: 450px;
     height: 180px;
-    padding-bottom: 8px;
 }
 
 .logo-img {
@@ -234,7 +231,6 @@ aside {
 
 .logo-sub {
     font-size: 21px;
-    font-weight: 350;
 }
 
 .search-container {
@@ -266,13 +262,10 @@ nav {
     display: flex;
     justify-content: center;
     background: var(--blue);
-    margin: auto;
     text-align: center;
-    margin-bottom: 16px;
 }
 
 nav a {
-    margin: auto 0;
     padding: 18px 0;
     width: 260px;
     font-size: 21px;
@@ -312,7 +305,7 @@ nav a {
     max-width: 1281px;
     margin: auto;
     border-bottom: 1px solid var(--grey);
-    padding: 0 16px 16px 16px;
+    padding: 16px;
 }
 
 .breadcrumb a {
@@ -349,7 +342,6 @@ nav a {
 /* Side bar */
 .contact-cont {
     text-align: center;
-    margin-bottom: 32px;
     background: var(--light-grey);
 }
 
@@ -363,32 +355,35 @@ nav a {
 }
 
 .news-cont {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 16px;*/
     background: var(--light-grey);
 }
 
-.news-cont img {
-    width: 267px;
-    height: 220px;
-    object-fit: cover;
-    margin: 0 12px 10px 12px;
-    padding-bottom: 32px;
+.news-cont div {
+    padding: 0 16px 32px 16px;
     border-bottom: 2px solid var(--grey);
-    border-radius: 0;
+}
+
+.news-cont img {
+    /*width: 267px;*/
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /*margin: 0 12px 10px 12px;
+    padding-bottom: 32px;*/
 }
 
 .news-cont h6 {
-    margin: 0 12px;
+    /*margin: 0 12px;*/
 }
 
 .news-cont p {
-    margin: auto;
     font-style: italic;
     font-weight: 300;
-    margin: 0 12px;
+    margin: 4px 0;
 }
 
 aside h4 {
@@ -409,6 +404,14 @@ aside h4 {
     object-fit: cover;
 }
 
+.explore-text {
+    order: 1;
+}
+
+.explore-img {
+    order: 2;
+}
+
 .explore-cont, .teachers-cont {
     display: flex;
     gap: 16px;
@@ -419,8 +422,8 @@ aside h4 {
     border-radius: 5px;
     background: var(--lightgreen-transparent);
     display: flex;
-    align-items: center;
-    padding: 16px 96px;
+    justify-content: space-evenly;
+    padding: 16px 0;
     margin: 16px auto 32px auto;
 }
 
@@ -515,15 +518,15 @@ aside h4 {
     margin: 0 auto 16px auto;
 }
 
-.robotics h2 {
+.robotics-header {
     color: var(--dark-grey);
 }
 
-.robotics img {
+.robotics-img img {
     height: 320px;
 }
 
-.biology img {
+.biology-img img {
     height: 520px;
     object-position: right;
 }
@@ -879,6 +882,7 @@ footer i {
     .container {
         border-bottom: 2px solid var(--grey);
         padding-bottom: 64px;
+        margin: auto;
     }
 
     aside, .news-cont img {
@@ -886,41 +890,29 @@ footer i {
     }
 
     .contact-cont div {
-        border-bottom: 1px solid var(--grey);
-        padding: 4px 0;
-    }
-
-    .contact-cont {
-        margin: 0;
+        border-bottom: 2px solid var(--grey);
+        padding: 28px 0;
     }
 
     .news-cont {
-        gap: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .news-cont img {
-        width: 208px;
-        height: 150px;
-        padding: 0;
-        margin: 0;
-        border-radius: 5px;
+        width: 335px;
+        height: 120px;
     }
 
     .news-cont h6 {
-        max-width: 200px;
         margin: 0;
     }
 
     .news-cont div {
-        border: 1px solid var(--light-grey);
-        border-radius: 5px;
-        height: 218px;
-        padding-top: 8px;
-        margin: 4px 12px;
-    }
-
-    .image-align {
-        padding-bottom: 21px;
+        padding: 8px 8px 2px 8px;
+        /*height: 218px;
+        padding-top: 8px;*/
     }
 
     aside {
@@ -935,6 +927,14 @@ footer i {
 @media (max-width: 1023px) {
     nav, .search-container, .footer-social, .logo-sub, .breadcrumb {
         display: none;
+    }
+
+    main {
+        max-width: 800px;
+    }
+
+    .container {
+        margin: auto;
     }
 
     h1 {
@@ -1028,6 +1028,10 @@ footer i {
         border-top: 1px solid var(--grey);
     }
 
+    .contact-cont {
+        margin-bottom: 32px;
+    }
+
     .hamburger-container {
         display: block;
     }
@@ -1056,10 +1060,7 @@ footer i {
     }
 
     .news-cont img {
-        width: 750px;
         object-position: 50% 65%;
-        border-bottom: 1px solid var(--grey);
-        padding-bottom: 32px;
     }
 
     .grid-container img {
@@ -1075,10 +1076,6 @@ footer i {
 
     .teachers-cont img {
         height: 540px;
-    }
-
-    .news-cont img {
-        width: 650px;
     }
 
     .exhibition img {
@@ -1136,7 +1133,7 @@ footer i {
 
 /* Mobile */
 @media (max-width: 767px) {
-    aside, footer, .teachers-cont img {
+    aside, footer {
         display: none;
     }
 
@@ -1164,7 +1161,7 @@ footer i {
 
     h2 {
         font-size: 1.9em;
-        text-align: center;
+        /*text-align: center;*/
     }
 
     h3 {
@@ -1188,20 +1185,42 @@ footer i {
         margin-bottom: 128px;
     }
 
-    .explore-cont img, .exhibition img {
+    /*.explore-cont img, .teachers-cont img, .exhibition img {
         width: 100%;
     }
 
     .explore-cont, .teachers-cont, .exhibition, .event div {
         display: grid;
         grid-template-columns: 1fr;
+    }*/
+
+    .explore-cont {
+        display: block;
+    }
+
+    .explore-cont img {
+        width: 200px;
+        height: 350px;
+        margin: 0 0 8px 8px;
+        float: right;
+    }
+
+    .teachers-cont {
+        display: block;
+    }
+
+   .teachers-cont img {
+        width: 220px;
+        height: 248px;
+        margin: 0 8px 8px 0;
+        float: left;
     }
 
     .club-cont {
         display: block;
         text-align: center;
         padding: 0;
-        margin: 32px auto 16px auto;
+        margin: 32px auto;
     }
 
     .club-cont div {
@@ -1218,13 +1237,24 @@ footer i {
     }
 
     .exhibition {
+        display: block;
         border-bottom: 2px solid var(--grey);
         padding: 64px 0;
-        margin: auto;
     }
 
-    .evolution-img, .robotics-img {
-        order: 2;
+    .exhibition-img {
+        float: left;
+        margin: 0 16px 16px 0;
+    }
+
+    .exhibition-img img {
+        height: 220px;
+        width: 200px;
+    }
+
+    .quote, .quote__name {
+        margin-left: 216px;
+        padding: 8px 0;
     }
 
     .now__night img {
@@ -1285,5 +1315,36 @@ footer i {
 
     .contact-info p {
         padding: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .teachers-cont img {
+        display: none;
+    }
+
+    .explore-cont img, .exhibition img {
+        width: 100%;
+    }
+
+    .explore-cont, .teachers-cont, .exhibition, .event div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .exhibition-text {
+        order: 1;
+    }
+
+    .exhibition-img {
+        order: 2;
+    }
+
+    .exhibition-img img {
+        height: 230px;
+    }
+
+    .quote, .quote__name {
+        margin: 0;
     }
 }

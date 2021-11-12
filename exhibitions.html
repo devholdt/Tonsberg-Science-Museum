@@ -53,7 +53,7 @@
     </nav>
     <div class="breadcrumb">
       <a href="index.html"><i class="fas fa-home"></i></a>
-      <span class="breadrumb-item breadcrumb__exhibitions">Exhibitions</span>
+      <span class="breadcrumb__exhibitions">Exhibitions</span>
     </div>
   </header>
 
@@ -64,7 +64,10 @@
   <main>
     <div class="container">
       <section class="exhibition">
-        <div>
+        <div class="exhibition-img cosmology-img">
+          <img src="images/Astronaut.jpg" alt="Image of an astronaut related to the Cosmology exhibition." />
+        </div>
+        <div class="exhibition-text">
           <h2 class="p-darkblue">Cosmology</h2>
           <p class="quote">
             "Man must rise above the Earth - to the top of the atmosphere and
@@ -89,15 +92,12 @@
             <span class="p-darkblue">exploration of the planets in our solar system</span>.
           </p>
         </div>
-        <div class="cosmology-img">
-          <img src="images/Astronaut.jpg" alt="Image of an astronaut related to the Cosmology exhibition." />
-        </div>
       </section>
       <section class="exhibition exhibition__margin">
-        <div class="evolution-img">
+        <div class="exhibition-img evolution-img">
           <img src="images/Primate.jpg" alt="Image of primate skeletons related to the Evolution exhibition." />
         </div>
-        <div>
+        <div class="exhibition-text">
           <h2 class="p-darkgreen">Evolution</h2>
           <p class="quote">
             "Evolution is the fundamental idea in all of life science - in all
@@ -123,8 +123,12 @@
           </p>
         </div>
       </section>
-      <section class="exhibition biology">
-        <div>
+      <section class="exhibition">
+        <div class="exhibition-img biology-img">
+          <img src="images/Anatomy.jpg"
+            alt="Image of the anatomy of the human head related to the Biology and medicine exhibition." />
+        </div>
+        <div class="exhibition-text">
           <h2 class="p-salmon">Biology and Medicine</h2>
           <p class="quote">
             "Biology is the study of complicated things that have the
@@ -152,17 +156,13 @@
             wild. Often our fellow creatures have beat us to it.
           </p>
         </div>
-        <div class="biology-img">
-          <img src="images/Anatomy.jpg"
-            alt="Image of the anatomy of the human head related to the Biology and medicine exhibition." />
-        </div>
       </section>
-      <section class="exhibition exhibition__margin robotics">
-        <div class="robotics-img">
+      <section class="exhibition exhibition__margin">
+        <div class="exhibition-img robotics-img">
           <img src="images/Net.jpg" alt="Image related to the Robotics and AI exhibition." class="robotics__img" />
         </div>
-        <div>
-          <h2 class="robotics__header">Robotics and AI</h2>
+        <div class="exhibition-text">
+          <h2 class="robotics-header">Robotics and AI</h2>
           <p class="quote">
             "There are an endless number of things to discover about robotics.
             A lot of it is just too fantastic for people to believe."
@@ -177,7 +177,11 @@
         </div>
       </section>
       <section class="exhibition">
-        <div>
+        <div class="exhibition-img ecology-img">
+          <img src="images/Ant.jpg" alt="Image of an ant, related to the
+          Ecology exhibition." />
+        </div>
+        <div class="exhibition-text">
           <h2 class="p-brown">Ecology</h2>
           <p class="quote">
             "The more clearly we can focus our attention on the wonders and
@@ -200,10 +204,6 @@
             <span class="p-brown">positive ways we can all contribute to a brighter future</span>.
           </p>
         </div>
-        <div class="ecology-img">
-          <img src="images/Ant.jpg" alt="Image of an ant, related to the
-          Ecology exhibition." />
-        </div>
       </section>
     </div>
 
@@ -214,7 +214,7 @@
           <h5>Location</h5>
           <p>Graabrødregaten 17</p>
         </div>
-        <div class="grey-bg">
+        <div>
           <h5>Phone</h5>
           <p>+47 12345678</p>
         </div>
@@ -226,20 +226,25 @@
       <div class="news-cont">
         <h4>News</h4>
         <div>
+          <h6>Night in the Museum</h6>
+          <p>Fridays from 18:00</p>
+          <img src="images/Nightsmall.jpg" alt="Museum at night" />
+        </div>
+        <div>
+          <h6>Young Stars Club</h6>
+          <p>Saturdays 10:00 - 13:00</p>
+          <img src="images/Toy.jpg" alt="Kids toy">
+        </div>
+        <div>
           <h6>Visiting Professor of Aeronautics</h6>
           <p>01.11.21 - 06.11.21</p>
           <img src="images/Science.jpg" alt="Prof Sheila Widnall" />
         </div>
         <div>
-          <h6>Night in the Museum</h6>
-          <p class="image-align">Fridays from 18:00</p>
-          <img src="images/Nightsmall.jpg" alt="Museum at night" />
-        </div>
-        <div>
           <h6>Energetica Exhibition on loan</h6>
-          <p class="news-time">06.12.21 - 09.01.22</p>
+          <p>06.12.21 - 09.01.22</p>
           <img src="images/Energeticaone.jpg" alt="Energetica
-          exhibition" />
+        exhibition" />
         </div>
       </div>
     </aside>
@@ -287,7 +292,7 @@
     <div class="footer-contact">
       <h2>Contact us</h2>
       <p><i class="fas fa-phone-alt"></i> +47 12345678</p>
-      <p class="footer__email">
+      <p>
         <i class="fas fa-envelope"></i> tbgscience@museum.no
       </p>
       <a href="support.html"><i class="fas fa-question-circle"></i> Support</a>
