@@ -10,13 +10,15 @@
     --light-blue: #288CDC;
     --dark-blue: #06467A;
     --green: #3FA652;
+    --green-text: #2f7d3e;
     --lightgreen-transparent: #3FA65219;
     --green-transparent: #3FA652b9;
-    --dark-green: #21552A;
     --gold: #C78114;
+    --gold-text: #7a4f0c;
     --brown: #7A4A00;
     --brown-transparent: #7A4A00b9;
     --salmon: #FC7F69;
+    --salmon-text: #b55b4b;
     --dark-salmon: #FF5237;
     --salmon-transparent: #FC7F69b9;
 }
@@ -430,7 +432,7 @@ aside h4 {
     font-family: filson-soft, Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: var(--green);
+    color: var(--green-text);
     width: 200px;
 }
 
@@ -451,19 +453,15 @@ aside h4 {
 }
 
 .p-green {
-    color: var(--green);
-}
-
-.p-darkgreen {
-    color: var(--dark-green);
+    color: var(--green-text);
 }
 
 .p-gold {
-    color: var(--gold);
+    color: var(--gold-text);
 }
 
 .p-salmon {
-    color: var(--salmon);
+    color: var(--salmon-text);
 }
 
 .p-brown {
