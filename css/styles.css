@@ -254,7 +254,7 @@ aside {
 .search-button {
     background: var(--light-blue);
     font-family: circe-rounded, Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     border: none;
     color: var(--white);
     padding: 4px 8px;
