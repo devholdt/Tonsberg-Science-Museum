@@ -252,7 +252,7 @@ aside {
 }
 
 .search-button {
-    background: var(--light-blue);
+    background: var(--dark-blue);
     font-family: circe-rounded, Arial, Helvetica, sans-serif;
     font-size: 22px;
     border: none;
