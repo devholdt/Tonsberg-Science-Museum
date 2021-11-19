@@ -210,10 +210,6 @@ aside {
     margin: auto;
 }
 
-.logo-mobile {
-    display: none;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -1299,14 +1295,8 @@ footer i {
 }
 
 @media (max-width: 500px) {
-    .logo-desktop, .teachers-cont img {
+    .teachers-cont img {
         display: none;
-    }
-
-    .logo-mobile {
-        display: block;
-        margin: 35px 16px;
-        width: 190px;
     }
 
     .explore-cont img, .exhibition img {
