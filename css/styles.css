@@ -73,9 +73,8 @@ h5 {
 }
 
 h6 {
-    font-size: 16px;
-    text-decoration: underline;
-    margin: 16px auto 0 auto;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 a {
@@ -252,7 +251,7 @@ aside {
 }
 
 .search-button {
-    background: var(--dark-blue);
+    background: var(--blue);
     font-family: circe-rounded, Arial, Helvetica, sans-serif;
     font-size: 22px;
     border: none;
@@ -358,6 +357,11 @@ nav a {
 
 .news-cont {
     background: var(--light-grey);
+}
+
+.news-cont h5 {
+    font-weight: 400;
+    margin: 12px auto 8px auto;
 }
 
 .news-cont div {
@@ -819,8 +823,11 @@ footer {
     margin-top: 128px;
 }
 
-footer h2 {
-    color: var(--white);
+footer h6 {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 24px;
 }
 
 footer table {
@@ -893,7 +900,7 @@ footer i {
         height: 120px;
     }
 
-    .news-cont h6 {
+    .news-cont h5 {
         margin: 0;
     }
 
