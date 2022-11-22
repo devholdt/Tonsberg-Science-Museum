@@ -32,13 +32,13 @@ The website is built using
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/MHerholdt94/Semester-Project-1-TSM.git
+git clone https://github.com/MHerholdt94/Tonsberg-Science-Museum.git
 ```
 
 2. Install the dependencies:
 
 ```
-npm i @devholdt/semester-project-1-tsm
+npm i @devholdt/tonsberg-science-museum
 ```
 
 ### Running
