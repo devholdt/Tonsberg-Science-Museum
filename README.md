@@ -57,8 +57,6 @@ To contribute to this project, open a pull request to be reviewed.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
 [My Twitter page](https://twitter.com/Harboldtt)
 
 [My LinkedIn page](https://www.linkedin.com/in/mathias-herholdt-b5a5bb204/)
