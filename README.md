@@ -25,30 +25,10 @@ The website is built using
 - HTML
 - CSS
 
-## Getting Started
-
-### Installing
-
-1. Clone the repo:
+## Clone repository
 
 ```bash
 git clone https://github.com/MHerholdt94/Tonsberg-Science-Museum.git
-```
-
-2. Install the dependencies:
-
-```
-npm i @devholdt/tonsberg-science-museum
-```
-
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
 ```
 
 ## Contributing
