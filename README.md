@@ -1,42 +1,33 @@
-# Tønsberg Science Museum - Semester Project 1
+<div align="center">
+   <img src="https://github.com/devholdt/Tonsberg-Science-Museum/assets/81162745/37e645ba-2b3d-4c27-b0a7-ecc7ae20dbcc" width="450">
+</div>
 
-![semesterproject1](https://user-images.githubusercontent.com/81162745/203291070-f987ae4e-7ca8-44df-bab8-9a572c9feb55.png)
+## About Tønsberg Science Museum
 
-A website for a fictional science museum based in Tønsberg, Norway.
+<div align="center">
+ Tønsberg Science Museum is a web application built only with HTML and CSS with engaging design with a focus on being responsive and easy to navigate.
+</div>
 
-## Description
+<br/>
 
-This project was made for the Semester Project 1 assignment at NOROFF where I was tasked with creating a website for a fictional science museum with a primary target audience of middle school children and families.
+<div align="center">
+  
+  [Live site](https://tbgsciencemuseum.netlify.app/)
 
-The website have a creative use of colours and a design that appeals to both children and parents.
+</div>
 
-Website prerequisites included
+<br/>
 
-- Should be informative, engaging and appealing
-- Should attract both middle school pupils and their parents/families
-- Should take for granted that the audience is inquisitive and intelligent
-- Should encourage users to visit the museum itself
-- Should be responsive and easy to use and navigate
+![tønsberg science museum home page](https://github.com/devholdt/Tonsberg-Science-Museum/assets/81162745/62038116-c55f-4557-8d6b-fc0196bdf6cd)
 
-## Built With
+<br/>
 
-The website is built using
+## Features
 
-- HTML
-- CSS
+- **Design**: The design was based on pre-created user stories which included people of all ages and backgrounds.
+- **Responsiveness**: The application is designed to be fully responsive, ensuring a seamless user experience on all devices.
+- **Resources**: The site is made using only HTML and CSS, which makes it quick to load and use on most devices.
 
-## Clone repository
+## License
 
-```bash
-git clone https://github.com/MHerholdt94/Tonsberg-Science-Museum.git
-```
-
-## Contributing
-
-To contribute to this project, open a pull request to be reviewed.
-
-## Contact
-
-[My Twitter page](https://twitter.com/Harboldtt)
-
-[My LinkedIn page](https://www.linkedin.com/in/mathias-herholdt-b5a5bb204/)
+This project is licensed under the MIT License.
